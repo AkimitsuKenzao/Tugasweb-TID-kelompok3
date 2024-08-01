@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --primary-color: #0a5eb8;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+  --text-color: #343a40;
+  --accent-color: #034d9b;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+header {
+  background: var(--primary-color);
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: var(--accent-color) 3px solid;
+}
+
+header .logo {
+  float: left;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+header .search-bar {
+  float: right;
+  margin-top: 10px;
+}
+
+header .search-bar input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+header .search-bar button {
+  padding: 5px 10px;
+  background: var(--accent-color);
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+nav {
+  background: var(--primary-color);
+  color: #ffffff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+main .container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+main .main-content {
+  flex: 3;
+}
+
+main .main-content h1 {
+  color: var(--primary-color);
+}
+
+main .main-content h2{
+  color: var(--primary-color);
+}
+
+main .main-content .list ul {
+  list-style-type: disc;
+  padding-left: 20px; 
+}
+
+
+main .sidebar {
+  flex: 1;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+main .sidebar .widget {
+  margin-bottom: 20px;
+}
+
+
+main .sidebar .widget h2 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+main .sidebar .widget h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #003366; 
+}
+main .sidebar .widget img{
+  width: 280px;
+  height: 280px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+main .sidebar .widget h3 {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  color: #003366;
+  text-align: center;
+}
+
+main .sidebar .widget p{
+  text-align: center;
+}
+
+main .sidebar .widget table th{
+  width: 150px;
+  text-align: left;
+  
+}
+
+main .sidebar .widget table td{
+  width: 150px;
+  text-align: left;
+  font-size: 14px;
+}
+
+footer {
+  background: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 30s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+      width: 100%;
+      padding: 0 10px;
+  }
+  header .logo, header .search-bar {
+      float: none;
+      text-align: center;
+  }
+  nav ul {
+      display: flex;
+      flex-direction: column;
+  }
+  .videos {
+      flex-direction: column;
+  }
+  .videos iframe {
+      margin-bottom: 10px;
+  }
+}
+
