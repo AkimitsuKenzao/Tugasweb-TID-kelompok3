@@ -115,37 +115,49 @@ main .sidebar .widget {
   margin-bottom: 20px;
 }
 
+
 main .sidebar .widget h2 {
   color: var(--primary-color);
   border-bottom: 2px solid var(--accent-color);
   padding-bottom: 5px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 main .sidebar .widget h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
-  color: #003366; /* Primary blue color for headings */
+  color: #003366; 
 }
+main .sidebar .widget img{
+  width: 280px;
+  height: 280px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 main .sidebar .widget h3 {
   font-size: 1.2em;
   margin-bottom: 8px;
   color: #003366;
+  text-align: center;
 }
 
-main .sidebar .widget ul {
-  list-style: none;
+main .sidebar .widget p{
+  text-align: center;
 }
 
-main .sidebar .widget ul li {
-  margin-bottom: 10px;
+main .sidebar .widget table th{
+  width: 150px;
+  text-align: left;
+  
 }
 
-main .sidebar .widget ul li a {
-  color: var(--accent-color);
-  text-decoration: none;
+main .sidebar .widget table td{
+  width: 150px;
+  text-align: left;
+  font-size: 14px;
 }
-
 /* Footer */
 footer {
   background: var(--primary-color);
