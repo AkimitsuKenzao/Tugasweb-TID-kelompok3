@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UHM - Universitas Handayani Makassar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="mainlogo.png" alt="UHM Logo"></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../About/About.html">About</a></li>
+                <li><a href="../Program Studi/akademik.html">Academic</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">galery</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="Pendaftaran.html">Admission</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="1.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="3.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="4.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="5.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="6.jpg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="main-content">
+                <h1>Penerimaan Mahasiswa Baru</h1><hr><br>
+                <header>
+                    <h2>Pendaftaran Terbuka</h2>
+                    <table class="header-table">
+                        <tr>
+                            <td>Tahun Akademik</td>
+                            <td>Tgl. Mulai Pendaftaran</td>
+                            <td>Status</td>
+                            <td>Periode</td>
+                        </tr>
+                        <tr>
+                            <td>2024/2025</td>
+                            <td>01 Juni 2024</td>
+                            <td>Aktif</td>
+                            <td>Juni 2024 s/d Agustus 2024</td>
+                        </tr>
+                    </table>
+                </header>
+                <section>
+                    <h2>Data Mahasiswa</h2>
+                    <form>
+                        <table class="form-table">
+                            <tr>
+                                <td><label for="nama-mahasiswa">Nama Mahasiswa</label></td>
+                                <td><input type="text" id="nama-mahasiswa" name="nama-mahasiswa"></td>
+                                <td><label for="no-reg">No. Reg.</label></td>
+                                <td><input type="text" id="no-reg" name="no-reg"></td>
+                                <td><label for="pin">PIN</label></td>
+                                <td><input type="text" id="pin" name="pin"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="tempat-lahir">Tempat Lahir</label></td>
+                                <td><input type="text" id="tempat-lahir" name="tempat-lahir"></td>
+                                <td><label for="tgl-lahir">Tgl. Lahir</label></td>
+                                <td><input type="date" id="tgl-lahir" name="tgl-lahir"></td>
+                                <td><label for="nisn">NISN</label></td>
+                                <td><input type="text" id="nisn" name="nisn"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="jenis-identitas">Jenis Identitas</label></td>
+                                <td>
+                                    <select id="jenis-identitas" name="jenis-identitas">
+                                        <option>Pilih</option>
+                                        <option>KTP</option>
+                                        <option>SIM</option>
+                                        <option>Passport</option>
+                                    </select>
+                                </td>
+                                <td><label for="no-identitas">No. Identitas</label></td>
+                                <td><input type="text" id="no-identitas" name="no-identitas"></td>
+                                <td><label for="email">Email</label></td>
+                                <td><input type="email" id="email" name="email"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="jenis-kelamin">Jenis Kelamin</label></td>
+                                <td>
+                                    <select id="jenis-kelamin" name="jenis-kelamin">
+                                        <option>Pilih</option>
+                                        <option>Laki-laki</option>
+                                        <option>Perempuan</option>
+                                    </select>
+                                </td>
+                                <td><label for="agama">Agama</label></td>
+                                <td>
+                                    <select id="agama" name="agama">
+                                        <option>Pilih</option>
+                                        <option>Islam</option>
+                                        <option>Kristen</option>
+                                        <option>Katholik</option>
+                                        <option>Hindu</option>
+                                        <option>Budha</option>
+                                        <option>Konghucu</option>
+                                    </select>
+                                </td>
+                                <td><label for="negara">Negara</label></td>
+                                <td>
+                                    <select id="negara" name="negara">
+                                        <option>Pilih</option>
+                                        <option>Indonesia</option>
+                                        <option>Malaysia</option>
+                                        <option>Singapura</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="alamat">Alamat</label></td>
+                                <td colspan="5"><input type="text" id="alamat" name="alamat"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="provinsi">Provinsi</label></td>
+                                <td>
+                                    <select id="provinsi" name="provinsi">
+                                        <option>Pilih</option>
+                                        <option>Sulawesi Selatan</option>
+                                        <option>Sulawesi Tenggara</option>
+                                        <option>Sulawesi Tengah</option>
+                                        <option>Sulawesi Utara</option>
+                                        <option>Sulawesi Barat</option>
+                                        <option>Gorontalo</option>
+                                    </select>
+                                </td>
+                                <td><label for="kabkot">Kab/Kot</label></td>
+                                <td>
+                                    <select id="kabkot" name="kabkot">
+                                        <option>Pilih</option>
+                                        <option>Makassar</option>
+                                        <option>Gowa</option>
+                                        <option>Takalar</option>
+                                    </select>
+                                </td>
+                                <td><label for="kecamatan">Kec.</label></td>
+                                <td>
+                                    <select id="kecamatan" name="kecamatan">
+                                        <option>Pilih</option>
+                                        <option>Panakkukang</option>
+                                        <option>Pattallassang</option>
+                                        <option>Parangloe</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="kode-pos">Kode Pos</label></td>
+                                <td><input type="text" id="kode-pos" name="kode-pos"></td>
+                                <td><label for="no-hp">No. HP</label></td>
+                                <td><input type="text" id="no-hp" name="no-hp"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </section>
+                <section>
+                    <h2>Data Orang Tua</h2>
+                    <form>
+                        <table class="form-table">
+                            <tr>
+                                <td><label for="nama-ayah">Nama Ayah</label></td>
+                                <td><input type="text" id="nama-ayah" name="nama-ayah"></td>
+                                <td><label for="nama-ibu">Nama Ibu</label></td>
+                                <td><input type="text" id="nama-ibu" name="nama-ibu"></td>
+                                <td><label for="alamat-ortu">Alamat</label></td>
+                                <td><input type="text" id="alamat-ortu" name="alamat-ortu"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="pekerjaan-ayah">Pekerjaan Ayah</label></td>
+                                <td>
+                                    <select id="pekerjaan-ayah" name="pekerjaan-ayah">
+                                        <option>Pilih</option>
+                                        <option>Petani</option>
+                                        <option>Guru</option>
+                                        <option>TNI</option>
+                                    </select>
+                                </td>
+                                <td><label for="pekerjaan-ibu">Pekerjaan Ibu</label></td>
+                                <td>
+                                    <select id="pekerjaan-ibu" name="pekerjaan-ibu">
+                                        <option>Pilih</option>
+                                        <option>Ibu Rumah Tangga</option>
+                                        <option>Guru</option>
+                                    </select>
+                                </td>
+                                <td><label for="no-hp-ortu">Telp/HP</label></td>
+                                <td><input type="text" id="no-hp-ortu" name="no-hp-ortu"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </section>
+                <section>
+                    <h2>Fakultas, Jurusan / Prodi Pilihan</h2>
+                    <form>
+                        <table class="form-table">
+                            <tr>
+                                <td><label for="prodi-1">Prodi 1</label></td>
+                                <td>
+                                    <select id="prodi-1" name="prodi-1">
+                                        <option>Pilih</option>
+                                        <option>Sistem Komputer (S2)</option>
+                                        <option>Teknik Informatika (S1)</option>
+                                        <option>Sistem Komputer (S1)</option>
+                                        <option>Sistem Informasi (S1)</option>
+                                        <option>Pend. Teknologi Informasi (S1)</option>
+                                        <option>Hukum (S1)</option>
+                                        <option>Administrasi Publik (S1)</option>
+                                        <option>Kewirausahaan (S1)</option>
+                                        <option>Teknik Informatika (D3)</option>
+                                        <option>Komputerisasi Akuntansi (D3)</option>
+                                        <option>Manajemen Informatika (D3)</option>
+                                    
+                                    </select>
+                                </td>
+                                <td><label for="prodi-2">Prodi 2</label></td>
+                                <td>
+                                    <select id="prodi-2" name="prodi-2">
+                                        <option>Pilih</option>
+                                        <option>Sistem Komputer (S2)</option>
+                                        <option>Teknik Informatika (S1)</option>
+                                        <option>Sistem Komputer (S1)</option>
+                                        <option>Sistem Informasi (S1)</option>
+                                        <option>Pend. Teknologi Informasi (S1)</option>
+                                        <option>Hukum (S1)</option>
+                                        <option>Administrasi Publik (S1)</option>
+                                        <option>Kewirausahaan (S1)</option>
+                                        <option>Teknik Informatika (D3)</option>
+                                        <option>Komputerisasi Akuntansi (D3)</option>
+                                        <option>Manajemen Informatika (D3)</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="pendidikan-terakhir">Pendidikan Terakhir</label></td>
+                                <td>
+                                    <select id="pendidikan-terakhir" name="pendidikan-terakhir">
+                                        <option>Pilih</option>
+                                        <option>SMA/MA</option>
+                                        <option>SMK</option>
+                                        <option>D3</option>
+                                        <option>S1</option>
+                                        <option>Lainnya</option>
+                                    </select>
+                                </td>
+                                <td><label for="jenis-daftar">Jenis Daftar</label></td>
+                                <td>
+                                    <select id="jenis-daftar" name="jenis-daftar">
+                                        <option>Pilih Jenis Daftar</option>
+                                        <option>Peserta Didik Baru</option>
+                                        <option>Pindahan</option>
+                                        <option>Lanjut Semester</option>
+                                        <option>Pindahan Alih Bentuk</option>
+                                        <option>Alih Jenjang</option>
+                                        <option>RPL Perolehan SKS</option>
+                                        <option>Pendidikan Non Gelar</option>
+                                        <option>Fast Track</option>
+                                        <option>RPL Transfer SKS</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="nama-sekolah">Nama Sekolah/Kampus</label></td>
+                                <td colspan="3"><input type="text" id="nama-sekolah" name="nama-sekolah"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="alamat-sekolah">Alamat Sekolah</label></td>
+                                <td colspan="3"><input type="text" id="alamat-sekolah" name="alamat-sekolah"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="info-dari">Info dari</label></td>
+                                <td>
+                                    <select id="info-dari" name="info-dari">
+                                        <option>Pilih Nilai</option>
+                                        <option>Surat Kabar</option>
+                                        <option>Internet</option>
+                                        <option>Teman</option>
+                                        <option>Staff PMB</option>
+                                        <option>Staff</option>
+                                        <option>Iklan</option>
+                                    </select>
+                                </td>
+                                <td colspan="2"><button type="submit">Daftar</button></td>
+                            </tr>
+                        </table>
+                    </form>
+                </section>
+                <footer>
+                    <p>Tgl. Daftar: 2024-08-03</p>
+                </footer>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Universitas Handayani Makassar. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
